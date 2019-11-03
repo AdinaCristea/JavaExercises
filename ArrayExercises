@@ -1,0 +1,23 @@
+//Read numbers from keyword until the total numbers needed to read.
+
+public class ArrayEx{
+    
+        public static Scanner sc= new Scanner(in);
+
+        public static void readIntegers( int count){
+            int[] array=new int[count];
+
+            for(int i=0; i<count;i++){
+                out.println("Introdu numarul " +i + " din " + count);
+                array[i]=sc.nextInt();
+
+            }
+
+            System.out.println(Arrays.toString(array));
+        }
+
+        public static void main(String[] args) {
+            readIntegers(4);
+
+        }
+}
